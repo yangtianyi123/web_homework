@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>doc</title>
+	<meta charset="utf-8"/>
+	<style type="text/css">
+	*
+	{
+		padding: 0;
+		margin:0;
+	}
+	a
+	{
+		text-decoration: none;
+	}
+	ul,ol,li
+	{
+		list-style: none;
+	}
+	.top
+	{
+		height: 30px;
+		background-color: rgb(244,244,244);
+	}
+	.top_l
+	{
+		height: 30px;
+		width: 590px;
+		float: left;
+		text-align: center;
+		line-height: 30px;
+		font-size: 12px;
+	}
+	.top_l>span
+	{
+		margin-right: 12px;
+	}
+	.tl1>a
+	{
+		color: black;
+	}
+	.tl3
+	{
+		background:url(./images/qq.png) no-repeat 0px;
+	}
+	.top_r
+	{
+		height: 30px;
+		width: 590px;
+		float: right;
+		text-align: center;
+		line-height: 30px;
+		font-size: 12px;
+	}
+	.top_r>span
+	{
+		margin-right: 12px;
+	}
+	.tr1>a
+	{
+		color: black;
+	}
+	.tr2>a
+	{
+		color: black;
+	}
+	.header_wrap
+	{
+		height: 160px;
+		border-bottom: 2px solid rgb(224,3,4)
+	}
+	.header_up
+	{
+		width: 1200px;
+		height: 115px;
+		margin:0 auto;
+	}
+	.hu1
+	{
+		width: 220px;
+		height: 115px;
+		float: left;
+		text-align: center;
+	}
+	.hu2
+	{
+		width: 800px;
+		height: 115px;
+		float: left;
+		text-align: center;
+		line-height: 115px;
+		position: relative;
+	}
+	.hu2_in
+	{
+		width: 494px;
+		height: 44px;
+		position: absolute;
+		top: 32%;
+		left: 20%;
+	}
+	.hu2_in>input
+	{
+		width: 400px;
+		height: 40px;
+		border:2px solid rgb(248,56,56); 
+		color: rgb(192,192,192);
+		float: left;
+	}
+	.hu2_in>span
+	{
+		width: 90px;
+		height: 44px;
+		background-color: rgb(248,56,56);
+		text-align: center;
+		line-height: 44px;
+		display: inline-block;
+		float: left;
+	}
+	.hu3
+	{
+		width: 150px;
+		height: 40px;
+		float: left;
+		text-align: center;
+		line-height: 40px;
+		background:rgb(245,245,245) url(./images/che.png) no-repeat 10px;
+		border:1px solid rgb(217,217,217);
+		margin-top: 40px;
+	}
+	.header_nav a
+	{
+		display: block;
+		width: 90px;
+		height: 40px;
+		color: black;
+		text-align: center;
+		line-height: 40px;
+		margin-right: 40px;
+		font-size: 20px;
+	}
+	.header_nav>ul>li
+	{
+		display: inline-block;
+		border-radius: 10px;
+		
+	}
+	.header_nav a:hover
+	{
+		background-color: rgb(253,3,4);
+		color: white;
+		border-radius: 10px;
+	}
+	.header_nav
+	{
+		width: 1200px;
+		height: 50px;
+		margin:0 auto;
+	}
+	.header_nav>ul
+	{
+		float: left;
+	}
+	.middle_wrap
+	{
+		height: 650px;
+		background-color: rgb(251,251,251);
+	}
+	.middle
+	{
+		width: 1200px;
+		height: 650px;
+		margin:0 auto;
+	}
+	.middle_up
+	{
+		height: 60px;
+		width: 200px;
+		text-align: center;
+		line-height: 60px;
+	}
+	.middle_up a
+	{
+		color: black;
+	}
+	.middle_cen
+	{
+		height: 590px;
+		width: 1200px;
+		position: relative;
+	}
+	.mc1
+	{
+		width: 215px;
+		height: 43px;
+		background:white url(./images/fenlei.png) no-repeat 20px;
+		text-align: center;
+		line-height: 43px;
+	}
+	.mc2
+	{
+		width: 215px;
+		height: 500px;
+		background-color: white;
+		text-align: center;
+		margin-top: 10px;
+	}
+	.mc2 a
+	{
+		color: black;
+	}
+	.mc3
+	{
+		width: 975px;
+		height: 553px;
+		background-color: white;
+		position: absolute;
+		top: 0%;
+		right: 0%;
+	}
+	.mc3>ul>li
+	{
+		float: left;
+		border:2px solid rgb(219,219,219);
+		width: 218px;
+		height: 250px;
+		margin-left: 18px;
+		margin-top: 18px;
+		text-align: center;
+	}
+	.footer_wrap
+	{
+		height: 255px;
+		background-color: rgb(46,46,46);
+	}
+	.footer_up
+	{
+		width: 1200px;
+		height: 150px;
+		border-bottom: 2px solid rgb(69,69,69);
+		margin:0 auto;
+	}
+	.footer_down
+	{
+		width: 1200px;
+		height: 100px;
+		margin: 0 auto;
+	}
+	.xinshou
+	{
+		width: 240px;
+		height: 130px;
+		float: left;
+	}
+	.xinshou>ul>li
+	{
+		width: 90px;
+		height: 32px;
+		text-align: center;
+		line-height: 32px;
+	}
+	.peisong
+	{
+		width: 240px;
+		height: 130px;
+		float: left;
+	}
+	.peisong>ul>li
+	{
+		width: 90px;
+		height: 32px;
+		line-height: 32px;
+	}
+	.gouwu
+	{
+		width: 240px;
+		height: 130px;
+		float: left;
+	}
+	.gouwu>ul>li
+	{
+		width: 90px;
+		height: 32px;
+		line-height: 32px;
+	}
+	.shouhou
+	{
+		width: 240px;
+		height: 130px;
+		float: left;
+	}
+	.shouhou>ul>li
+	{
+		width: 90px;
+		height: 32px;
+		line-height: 32px;
+	}
+	.guanyu
+	{
+		width: 240px;
+		height: 130px;
+		float: left;
+	}
+	.guanyu>ul>li
+	{
+		width: 90px;
+		height: 32px;
+		line-height: 32px;
+	}
+	.down
+	{
+		width: 1200px;
+		height: 140px;
+		position: absolute;
+		top: 145px;
+		left: 180px;
+		text-align: center;
+	}
+	.footer_down
+	{
+		text-align: center;
+	}
+	</style>
+</head>
+<body>
+<!--头顶灰框框-->
+<div class="top">
+	<div class="top_l">
+		<span class="tl1"><a href="#">我的收藏</a></span>
+		<span class="tl2">E族之家手机版</span>
+		<span class="tl3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;328202238</span>
+	</div>
+	<div class="top_r">
+		<span class="tr1"><a href="#">扫描加入</a></span>
+		<span class="tr2">欢迎来到E族之家，<a href="#">请登录 </a>|<a href="#"> 注册</a></span>
+	</div>
+</div>
+<!-- logo所在的白框框-->
+<div class="header_wrap">
+	<div class="header_up">
+		<div class="hu1">
+		<img src="./images/logo.png">
+		</div>
+		<div class="hu2">
+		<div class="hu2_in">
+			<input type="text" name="输入" value=" 请输入关键词！"/>
+			<span><a href="#" style="color:white;font-size:16px">搜索</a></span>
+		</div>
+		</div>
+		<div class="hu3">
+		&nbsp;&nbsp;&nbsp;购物车（<span style="color:red">0</span>）
+		</div>
+	</div>
+	<div class="header_nav">
+		<ul>
+			<li><a href="#">首页</a></li>
+			<li><a href="#">E族生活</a></li>
+			<li><a href="#">E族服务</a></li>
+			<li><a href="#">E族爱心</a></li>
+		</ul>
+	</div>
+</div>
+<!--中间的主体部分-->
+<div class="middle_wrap">
+	<div class="middle">
+		<div class="middle_up">
+			当前位置：<a href="#">E族爱心</a>><a href="#">食品</a>
+		</div>
+		<div class="middle_cen">
+			<div class="mc1">
+				全部分类
+			</div>
+			<div class="mc2">
+				<br/>
+				<p><a href="#" style="color:rgb(255,58,39)">>食品</a></p>
+				<br/>
+				<br/>
+				<p><a href="#">>生活用品</a></p>
+			</div>
+			<div class="mc3">
+				<ul>
+				<li>
+					<img src="images/lajiao.png"/>
+					<p style="color:rgb(163,163,163)">精品辣椒100g</p>
+					<p>¥90.00</p>
+				</li>
+				<li>
+					 <img src="images/baixiangguo.png"/>
+					 <p style="color:rgb(163,163,163)">特级百香果3斤</p>
+					 <p>¥90.00</p>
+				</li>
+				<li>
+					 <img src="images/pijiu.png"/>
+					 <p style="color:rgb(163,163,163)">万威啤酒500ml</p>
+					 <p>¥90.00</p>
+				</li>
+				<li>
+					 <img src="images/songzi.png"/>
+					 <p style="color:rgb(163,163,163)">万威啤酒500ml</p>
+					 <p>¥90.00</p>
+				</li>
+				<li>
+					 <img src="images/lajiao.png"/>
+					 <p style="color:rgb(163,163,163)">精品辣椒100g</p>
+					 <p>¥90.00</p>
+				</li>
+				<li>
+					 <img src="images/baixiangguo.png"/>
+					 <p style="color:rgb(163,163,163)">特级百香果3斤</p>
+					 <p>¥90.00</p>
+				</li>
+				<li>
+					 <img src="images/pijiu.png"/>
+					 <p style="color:rgb(163,163,163)">万威啤酒500ml</p>
+					 <p>¥90.00</p>
+				</li>
+				<li>
+					 <img src="images/songzi.png"/>
+					 <p style="color:rgb(163,163,163)">万威啤酒500ml</p>
+					 <p>¥90.00</p>
+				</li>
+			</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="footer_wrap">
+	<div class="footer_up">
+		<div class="xinshou">
+			<ul>
+				<li><a href="#" style="text-decoration:none;color:white;font-size:17px;">新手上路</a></li>
+				<li><a href="#" style="text-decoration:none;color:white;font-size:15px;">售后流程</a></li>
+				<li><a href="#" style="text-decoration:none;color:white;font-size:15px;">购物流程</a></li>
+				<li><a href="#" style="text-decoration:none;color:white;font-size:15px;">订购方式</a></li>
+			</ul>
+		</div>
+		<div class="peisong">
+			<ul>
+				<li><a href="#" style="text-decoration:none;color:white;font-size:17px;">配送方式</a></li>
+				<li><a href="#" style="text-decoration:none;color:white;font-size:15px;">货到付款区域</a></li>
+				<li><a href="#" style="text-decoration:none;color:white;font-size:15px;">配送支付查询</a></li>
+				<li><a href="#" style="text-decoration:none;color:white;font-size:15px;">支付方式说明</a></li>
+			</ul>
+		</div>
+		<div class="gouwu">
+			<ul>
+				<li><a href="#" style="text-decoration:none;color:white;font-size:17px;">购物指南</a></li>
+				<li><a href="#" style="text-decoration:none;color:white;font-size:15px;">常见问题</a></li>
+				<li><a href="#" style="text-decoration:none;color:white;font-size:15px;">订购流程</a></li>
+				<li><a href="#" style="text-decoration:none;color:white;font-size:15px;">注册新会员</a></li>
+			</ul>
+		</div>
+		<div class="shouhou">
+			<ul>
+				<li><a href="#" style="text-decoration:none;color:white;font-size:17px;">售后服务</a></li>
+				<li><a href="#" style="text-decoration:none;color:white;font-size:15px;">退换货原则</a></li>
+				<li><a href="#" style="text-decoration:none;color:white;font-size:15px;">售后服务保证</a></li>
+				<li><a href="#" style="text-decoration:none;color:white;font-size:15px;">换货流程</a></li>
+			</ul>
+		</div>
+		<div class="guanyu">
+			<ul>
+				<li><a href="#" style="text-decoration:none;color:white;font-size:17px;">关于我们</a></li>
+				<li><a href="#" style="text-decoration:none;color:white;font-size:15px;">网站故障报告</a></li>
+				<li><a href="#" style="text-decoration:none;color:white;font-size:15px;">联系我们</a></li>
+				<li><a href="#" style="text-decoration:none;color:white;font-size:15px;">投诉与建议</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="footer_down">
+		<br/>
+		<p>
+		<a href="#" style="text-decoration:none;color:rgb(125,125,125);font-size:13px;"> E族生活 </a>&nbsp;|&nbsp;
+		<a href="#" style="text-decoration:none;color:rgb(125,125,125);font-size:13px;"> 居家维修保养 </a>&nbsp;|&nbsp;
+		<a href="#" style="text-decoration:none;color:rgb(125,125,125);font-size:13px;"> 住宿优惠信息 </a>&nbsp;|&nbsp;
+		<a href="#" style="text-decoration:none;color:rgb(125,125,125);font-size:13px;"> 出行接送 </a>&nbsp;|&nbsp;
+		<a href="#" style="text-decoration:none;color:rgb(125,125,125);font-size:13px;"> E族活动 </a>&nbsp;|&nbsp;
+		<a href="#" style="text-decoration:none;color:rgb(125,125,125);font-size:13px;"> E族爱心 </a>&nbsp;|&nbsp;
+		<a href="#" style="text-decoration:none;color:rgb(125,125,125);font-size:13px;"> 积分商城 </a>
+		</p>
+		<br/>
+		<p style="color:rgb(125,125,125);">
+		© 2017-2018 E族之家 版权所有，并保留所有权利。ICP备案证书号：粤ICP备17127392号
+		</p>
+	</div>
+</div>
+</body>
+</html>
